@@ -34,7 +34,7 @@ class PrepareBaseModel:
         flatten_in = tf.keras.layers.Flatten()(model.output)
         prediction = tf.keras.layers.Dense(
             units=classes,
-            activation="softmax"
+            activation="sigmoid"
         )(flatten_in)
 
         full_model = tf.keras.models.Model(
@@ -44,7 +44,7 @@ class PrepareBaseModel:
 
         full_model.compile(
             optimizer=tf.keras.optimizers.SGD(learning_rate=learning_rate),
-            loss=tf.keras.losses.CategoricalCrossentropy(),
+            loss=tf.keras.losses.BinaryCrossentropy(),
             metrics=["accuracy"]
         )
 
