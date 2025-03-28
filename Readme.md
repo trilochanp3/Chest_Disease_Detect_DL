@@ -5,7 +5,7 @@ Lung Cancer Detection using VGG16
 This project aims to detect lung cancer (Adenocarcinoma) using deep learning techniques. We leverage VGG16 with transfer learning to classify lung images into two categories:
 Normal
 Adenocarcinoma Cancer
-![Lung Cancer Detection](./lung-r.jpg)
+![Lung Cancer Detection](./Lung_r.jpg)
 
 📂 Dataset
 
