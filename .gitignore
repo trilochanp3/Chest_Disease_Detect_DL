@@ -13,3 +13,8 @@ __pycache__/
 # Ignore DVC cache (if using DVC)
 .dvc/
 .dvc/cache/
+
+# Ignore large model files
+artifacts/training/model.h5
+artifacts/prepare_base_model/base_model_updated.h5
+artifacts/prepare_base_model/base_model.h5
